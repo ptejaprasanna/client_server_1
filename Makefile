@@ -1,20 +1,10 @@
-CC= /usr/bin/gcc
-all:	tcpclient tcpserver udpclient udpserver nonblock-udpclient
+all:	tcpclient tcpserver
 
-tcpclient: tcpclient.c;
-	${CC} tcpclient.c -o tcpclient
+tcpclient: tcpclient.cpp;
+	g++ tcpclient.cpp -o tcpclient
 
-tcpserver: tcpserver.c;
-	${CC} tcpserver.c -o tcpserver
-
-udpclient: udpclient.c;
-	${CC} udpclient.c -o udpclient
-
-udpserver: udpserver.c;
-	${CC} udpserver.c -o udpserver
-
-nonblock-udpclient:	nonblock-udpclient.c;
-	$(CC) nonblock-udpclient.c -o nonblock-udpclient
+tcpserver: tcpserver.cpp;
+	g++ tcpserver.cpp -o tcpserver
 
 clean:
-	rm tcpclient tcpserver udpclient udpserver nonblock-udpclient
+	rm tcpclient tcpserver

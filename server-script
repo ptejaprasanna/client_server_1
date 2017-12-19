@@ -1,0 +1,78 @@
+Script started on Thu 19 Oct 2017 01:13:12 AM EDT
+reddytej@cisc650:~/proj1$ ls -l
+total 38
+-rw-r-xr-x 1 reddytej reddytej   175 Oct 19 00:49 Makefile
+-rwxrwxr-x 1 reddytej reddytej 18686 Oct 19 01:11 tcpclient
+-rw-rw-r-- 1 reddytej reddytej 16086 Oct 19 00:56 tcpclient.cpp
+-rwxrwxr-x 1 reddytej reddytej 18202 Oct 19 01:11 tcpserver
+-rw-rw-r-- 1 reddytej reddytej 16732 Oct 19 00:55 tcpserver.cpp
+reddytej@cisc650:~/proj1$ make clean
+rm tcpclient tcpserver
+reddytej@cisc650:~/proj1$ ls -l
+total 19
+-rw-r-xr-x 1 reddytej reddytej   175 Oct 19 00:49 Makefile
+-rw-rw-r-- 1 reddytej reddytej 16086 Oct 19 00:56 tcpclient.cpp
+-rw-rw-r-- 1 reddytej reddytej 16732 Oct 19 00:55 tcpserver.cpp
+reddytej@cisc650:~/proj1$ make all
+g++ tcpclient.cpp -o tcpclient
+g++ tcpserver.cpp -o tcpserver
+reddytej@cisc650:~/proj1$ ls -l
+total 38
+-rw-r-xr-x 1 reddytej reddytej   175 Oct 19 00:49 Makefile
+-rwxrwxr-x 1 reddytej reddytej 18686 Oct 19 01:13 tcpclient
+-rw-rw-r-- 1 reddytej reddytej 16086 Oct 19 00:56 tcpclient.cpp
+-rwxrwxr-x 1 reddytej reddytej 18202 Oct 19 01:13 tcpserver
+-rw-rw-r-- 1 reddytej reddytej 16732 Oct 19 00:55 tcpserver.cpp
+reddytej@cisc650:~/proj1$ ./tcpserver
+Server listening on PORT NUMBER 8339
+
+The total number of letters transmitted: 1234
+the number of separate transmissions (each send counts as a separate transmission): 13
+the total number of bytes transmitted (as measured by the sum of the values returned by each send operation): 1234
+Checksum: 62
+
+The total number of letters transmitted: 8732
+the number of separate transmissions (each send counts as a separate transmission): 88
+the total number of bytes transmitted (as measured by the sum of the values returned by each send operation): 8732
+Checksum: 203
+y 
+The total number of integers transmitted: 5123
+the number of separate transmissions (each send counts as a separate transmission): 103
+the total number of bytes transmitted (as measured by the sum of the values returned by each send operation): 10246
+Checksum: 17696
+
+The total number of integers transmitted: 2344
+the number of separate transmissions (each send counts as a separate transmission): 47
+the total number of bytes transmitted (as measured by the sum of the values returned by each send operation): 4688
+Checksum: 51922
+^C
+reddytej@cisc650:~/proj1$ ./tcpserver
+Server: can't bind to local address: Address already in use
+reddytej@cisc650:~/proj1$ ./tcpserver
+Server: can't bind to local address: Address already in use
+reddytej@cisc650:~/proj1$ ./tcpserver
+Server listening on PORT NUMBER 8339
+
+The total number of letters transmitted: 12121
+the number of separate transmissions (each send counts as a separate transmission): 122
+the total number of bytes transmitted (as measured by the sum of the values returned by each send operation): 12121
+Checksum: 34
+
+The total number of integers transmitted: 7897
+the number of separate transmissions (each send counts as a separate transmission): 158
+the total number of bytes transmitted (as measured by the sum of the values returned by each send operation): 15794
+Checksum: 35963
+
+The total number of letters transmitted: 212
+the number of separate transmissions (each send counts as a separate transmission): 3
+the total number of bytes transmitted (as measured by the sum of the values returned by each send operation): 212
+Checksum: 101
+
+The total number of integers transmitted: 433
+the number of separate transmissions (each send counts as a separate transmission): 9
+the total number of bytes transmitted (as measured by the sum of the values returned by each send operation): 866
+Checksum: 30784
+^C
+reddytej@cisc650:~/proj1$ exit
+
+Script done on Thu 19 Oct 2017 01:22:59 AM EDT

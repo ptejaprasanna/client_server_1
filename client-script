@@ -1,0 +1,136 @@
+Script started on Thu 19 Oct 2017 01:14:24 AM EDT
+reddytej@cisc650:~/proj1$ ls -l
+total 38
+-rw-r-xr-x 1 reddytej reddytej   175 Oct 19 00:49 Makefile
+-rwxrwxr-x 1 reddytej reddytej 18686 Oct 19 01:13 tcpclient
+-rw-rw-r-- 1 reddytej reddytej 16086 Oct 19 00:56 tcpclient.cpp
+-rwxrwxr-x 1 reddytej reddytej 18202 Oct 19 01:13 tcpserver
+-rw-rw-r-- 1 reddytej reddytej 16732 Oct 19 00:55 tcpserver.cpp
+reddytej@cisc650:~/proj1$ ./tcpclient 
+Enter hostname of server: cisc650
+Enter port number for server: 8339
+Input a character (C or N):
+C
+Please enter an integer: 1234
+
+The response from the server is:
+Character entered: C  Interger entered: 1234
+
+The total number of letters received: 1234
+the number of separate receive operations: 16
+the total number of bytes received (as measured by the sum of the values returned by each receive operation): 1234
+Checksum: 62
+Do you want to continue?( y | n ) y
+Continuing
+Enter hostname of server: cisc650
+Enter port number for server: 8339
+Input a character (C or N):
+C
+Please enter an integer: 8732
+
+The response from the server is:
+Character entered: C  Interger entered: 8732
+
+The total number of letters received: 8732
+the number of separate receive operations: 110
+the total number of bytes received (as measured by the sum of the values returned by each receive operation): 8732
+Checksum: 203
+Do you want to continue?( y | n ) y
+Continuing
+Enter hostname of server: cs isc650
+Enter port number for server: 8339
+Input a character (C or N):
+N
+Please enter an integer: 5123
+
+The response from the server is:
+Character entered: N  Interger entered: 5123
+
+The total number of integers received: 5123
+the number of separate receive operations: 129
+the total number of bytes received (as measured by the sum of the values returned by each receive operation): 10246
+Checksum: 17696
+Do you want to continue?( y | n ) y
+Continuing
+Enter hostname of server: cisc650
+Enter port number for server: 8339
+Input a character (C or N):
+N
+Please enter an integer: 2344
+
+The response from the server is:
+Character entered: N  Interger entered: 2344
+
+The total number of integers received: 2344
+the number of separate receive operations: 59
+the total number of bytes received (as measured by the sum of the values returned by each receive operation): 4688
+Checksum: 51922
+Do you want to continue?( y | n ) n
+reddytej@cisc650:~/proj1$ ./tcpclient 
+Enter hostname of server: cisc650
+Enter port number for server: 8339
+Input a character (C or N):
+d
+
+Wrong input entered (C and N are the only inputs you can enter!)
+Enter a character again. 
+Input a character (C or N):
+C
+Please enter an integer: 12121
+
+The response from the server is:
+Character entered: C  Interger entered: 12121
+
+The total number of letters received: 12121
+the number of separate receive operations: 152
+the total number of bytes received (as measured by the sum of the values returned by each receive operation): 12121
+Checksum: 34
+Do you want to continue?( y | n ) n
+reddytej@cisc650:~/proj1$ ./tcpclient 
+Enter hostname of server: cisc650
+Enter port number for server: 8339
+Input a character (C or N):
+N
+Please enter an integer: 78979 
+
+The response from the server is:
+Character entered: N  Interger entered: 7897
+
+The total number of integers received: 7897
+the number of separate receive operations: 198
+the total number of bytes received (as measured by the sum of the values returned by each receive operation): 15794
+Checksum: 35963
+Do you want to continue?( y | n ) y
+Continuing
+Enter hostname of server: cisc650
+Enter port number for server: 8339
+Input a character (C or N):
+C
+Please enter an integer: 212
+
+The response from the server is:
+Character entered: C  Interger entered: 212
+
+The total number of letters received: 212
+the number of separate receive operations: 3
+the total number of bytes received (as measured by the sum of the values returned by each receive operation): 212
+Checksum: 101
+Do you want to continue?( y | n ) n
+reddytej@cisc650:~/proj1$ ./tcpclient 
+Enter hostname of server: cisc650
+Enter port number for server: 8339
+Input a character (C or N):
+N
+Please enter an integer: 433
+
+The response from the server is:
+Character entered: N  Interger entered: 433
+
+The total number of integers received: 433
+the number of separate receive operations: 11
+the total number of bytes received (as measured by the sum of the values returned by each receive operation): 866
+Checksum: 30784
+Do you want to continue?( y | n ) n
+reddytej@cisc650:~/proj1$ exit
+
+Script done on Thu 19 Oct 2017 01:23:01 AM EDT
